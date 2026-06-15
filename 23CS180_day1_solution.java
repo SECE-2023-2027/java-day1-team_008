@@ -38,11 +38,20 @@ class day1_solution{
     }
 
     public static void program5() {
-    Scanner sc = new Scanner(System.in);
-    System.out.println("PROGRAM 5");
-    System.out.println("Enter a number:");
-    int n = sc.nextInt();
-    System.out.println("Binary Number:" + Integer.toBinaryString(n));
+        Scanner sc = new Scanner(System.in);
+        System.out.println("PROGRAM 5");
+        System.out.println("Enter a number:");
+        int n = sc.nextInt();
+        System.out.println("Binary Number:" + Integer.toBinaryString(n));
+    }
+    public static void program6() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("PROGRAM 6");
+        System.out.println("Enter a number:");
+        int n = sc.nextInt();
+        String hex = Integer.toHexString(n);
+        System.out.println("Hexadecimal:" + hex.toUpperCase());
+        
     }
 
     public static void main(String[] args) {
@@ -50,6 +59,7 @@ class day1_solution{
         //program2();
         //program3();
         //program4();
-        program5();
+        //program5();
+        program6();
     }
 }
