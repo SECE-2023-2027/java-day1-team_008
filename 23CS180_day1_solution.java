@@ -92,12 +92,37 @@ class day1_solution{
         }
         System.out.println("Sum of digits:" + sum);
     }
+
     public static void program10() {
         Scanner sc = new Scanner(System.in);
         System.out.println("PROGRAM 10");
         System.out.println("Enter String to reverse:");
         String str = sc.nextLine();
         System.out.println("Reversed String:" + new StringBuilder(str).reverse().toString());
+    }
+
+    public static void program11() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the string: ");
+        String str = sc.nextLine();
+        int letters = 0, spaces = 0, numbers = 0, others = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (Character.isLetter(ch)) {
+                letters++;
+            } else if (Character.isDigit(ch)) {
+                numbers++;
+            } else if (Character.isWhitespace(ch)) {
+                spaces++;
+            } else {
+                others++;
+            }
+        }
+        System.out.println("letter: " + letters);
+        System.out.println("space: " + spaces);
+        System.out.println("number: " + numbers);
+        System.out.println("other: " + others);
     }
     public static void main(String[] args) {
         //program1();
@@ -109,6 +134,7 @@ class day1_solution{
         //program7();
         //program8();
         //program9();
-        program10();
+        //program10();
+        program11();
     }
 }
