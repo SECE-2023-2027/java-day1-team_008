@@ -13,18 +13,34 @@ class day1_solution{
         String s = sc.next();
         System.out.println("Hello" + " " + s);
     }
+
     public static void program3() {
         System.out.println("PROGRAM 3");
         Scanner sc = new Scanner(System.in);
         double radius = sc.nextDouble();
         double area = Math.PI * radius * radius;
         double perimeter = 2 * Math.PI * radius;
-        System.out.println("Area of circle:"+area);
-        System.out.println("Perimeter of circle:"+perimeter);
+        System.out.println("Area of circle:" + area);
+        System.out.println("Perimeter of circle:" + perimeter);
     }
+
+    public static void program4() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("PROGRAM 4");
+        System.out.println("Enter two binary numbers:");
+        String b1 = sc.next();
+        String b2 = sc.next();
+        int n1 = Integer.parseInt(b1, 2);
+        int n2 = Integer.parseInt(b2, 2);
+        String res = Integer.toBinaryString(n1 + n2);
+        System.out.println("Sum of two binary numbers:" + res);
+
+    }
+
     public static void main(String[] args) {
         //program1();
         //program2();
-        program3();
+        //program3();
+        program4();
     }
 }
