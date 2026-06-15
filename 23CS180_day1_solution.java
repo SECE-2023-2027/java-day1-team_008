@@ -80,6 +80,19 @@ class day1_solution{
         
     }
 
+    public static void program9() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("PROGRAM 9");
+        System.out.println("Enter a number:");
+        int n = sc.nextInt();
+        int sum = 0;
+        while (n != 0) {
+            sum += n % 10;
+            n = n / 10;
+        }
+        System.out.println("Sum of digits:" + sum);
+    }
+
     public static void main(String[] args) {
         //program1();
         //program2();
@@ -88,6 +101,7 @@ class day1_solution{
         //program5();
         //program6();
         //program7();
-        program8();
+        //program8();
+        program9();
     }
 }
