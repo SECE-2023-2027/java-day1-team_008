@@ -9,12 +9,22 @@ class day1_solution{
     }
 
     public static void program1() {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.next();
-        System.out.println("Hello"+" "+s);
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        System.out.println("Hello" + " " + s);
+    }
+    public static void program3() {
+        System.out.println("PROGRAM 3");
+        Scanner sc = new Scanner(System.in);
+        double radius = sc.nextDouble();
+        double area = Math.PI * radius * radius;
+        double perimeter = 2 * Math.PI * radius;
+        System.out.println("Area of circle:"+area);
+        System.out.println("Perimeter of circle:"+perimeter);
     }
     public static void main(String[] args) {
         //program1();
-        program2();
+        //program2();
+        program3();
     }
 }
