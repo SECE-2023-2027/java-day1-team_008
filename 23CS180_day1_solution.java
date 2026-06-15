@@ -124,6 +124,16 @@ class day1_solution{
         System.out.println("number: " + numbers);
         System.out.println("other: " + others);
     }
+
+    public static void program12() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("PROGRAM 12");
+        System.out.println("Enter a character:");
+        char c = sc.next().charAt(0);
+        int ascii = (int) c;
+        System.out.println("ASCII value of " + c + " is: " + ascii);
+    }
+
     public static void main(String[] args) {
         //program1();
         //program2();
@@ -135,6 +145,7 @@ class day1_solution{
         //program8();
         //program9();
         //program10();
-        program11();
+        //program11();
+        program12();
     }
 }
