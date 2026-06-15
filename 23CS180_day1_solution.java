@@ -1,5 +1,6 @@
 import java.util.Scanner;
-class day1_solution{
+
+class day1_solution {
     public static void program2() {
         System.out.println("PROGRAM 2");
         System.out.println(-5 + 8 * 6);
@@ -62,8 +63,9 @@ class day1_solution{
         String octal = Integer.toOctalString(n);
         System.out.println("Octal:" + octal);
     }
+
     public static void program8() {
-         Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Input a binary number: ");
         String binary = sc.next();
@@ -77,7 +79,7 @@ class day1_solution{
             power++;
         }
         System.out.println("Decimal number is : " + decimal);
-        
+
     }
 
     public static void program9() {
@@ -142,8 +144,9 @@ class day1_solution{
         int res = (n % 2 == 0) ? 1 : 0;
         System.out.println("Result:" + res);
     }
+
     public static void program14() {
-         System.out.print("Divided by 3: ");
+        System.out.print("Divided by 3: ");
         for (int i = 1; i <= 100; i++) {
             if (i % 3 == 0) {
                 System.out.print(i + ", ");
@@ -169,20 +172,71 @@ class day1_solution{
         }
     }
 
+    public static void program15() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("PROGRAM 15");
+        System.out.println("Enter three numbers:");
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        int n3 = sc.nextInt();
+        boolean isEqual = (n1 % 10 == n2 % 10) || (n2 % 10 == n3 % 10) || (n1 % 10 == n3 % 10);
+        System.out.println("Result:" + isEqual);
+    }
+
     public static void main(String[] args) {
-        //program1();
-        //program2();
-        //program3();
-        //program4();
-        //program5();
-        //program6();
-        //program7();
-        //program8();
-        //program9();
-        //program10();
-        //program11();
-        //program12();
-        //program13();
-        program14();
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter program number (1-15): ");
+        int choice = sc.nextInt();
+
+        switch (choice) {
+            case 1:
+                program1();
+                break;
+            case 2:
+                program2();
+                break;
+            case 3:
+                program3();
+                break;
+            case 4:
+                program4();
+                break;
+            case 5:
+                program5();
+                break;
+            case 6:
+                program6();
+                break;
+            case 7:
+                program7();
+                break;
+            case 8:
+                program8();
+                break;
+            case 9:
+                program9();
+                break;
+            case 10:
+                program10();
+                break;
+            case 11:
+                program11();
+                break;
+            case 12:
+                program12();
+                break;
+            case 13:
+                program13();
+                break;
+            case 14:
+                program14();
+                break;
+            case 15:
+                program15();
+                break;
+            default:
+                System.out.println("Invalid choice!");
+        }
     }
 }
