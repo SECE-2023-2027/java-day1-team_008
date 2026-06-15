@@ -44,6 +44,7 @@ class day1_solution{
         int n = sc.nextInt();
         System.out.println("Binary Number:" + Integer.toBinaryString(n));
     }
+
     public static void program6() {
         Scanner sc = new Scanner(System.in);
         System.out.println("PROGRAM 6");
@@ -51,7 +52,15 @@ class day1_solution{
         int n = sc.nextInt();
         String hex = Integer.toHexString(n);
         System.out.println("Hexadecimal:" + hex.toUpperCase());
-        
+    }
+
+    public static void program7() {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("PROGRAM 7");
+    System.out.println("Enter a number:");
+    int n = sc.nextInt();
+    String octal = Integer.toOctalString(n);
+    System.out.println("Octal:" + octal);
     }
 
     public static void main(String[] args) {
@@ -60,6 +69,7 @@ class day1_solution{
         //program3();
         //program4();
         //program5();
-        program6();
+        //program6();
+        program7();
     }
 }
