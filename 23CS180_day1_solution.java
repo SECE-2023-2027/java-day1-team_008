@@ -139,8 +139,34 @@ class day1_solution{
         System.out.println("PROGRAM 13");
         System.out.println("Enter a number:");
         int n = sc.nextInt();
-        int res=(n%2==0)?1:0;
+        int res = (n % 2 == 0) ? 1 : 0;
         System.out.println("Result:" + res);
+    }
+    public static void program14() {
+         System.out.print("Divided by 3: ");
+        for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0) {
+                System.out.print(i + ", ");
+            }
+        }
+
+        System.out.println();
+
+        System.out.print("Divided by 5: ");
+        for (int i = 1; i <= 100; i++) {
+            if (i % 5 == 0) {
+                System.out.print(i + ", ");
+            }
+        }
+
+        System.out.println();
+
+        System.out.print("Divided by 3 & 5: ");
+        for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.print(i + ", ");
+            }
+        }
     }
 
     public static void main(String[] args) {
@@ -156,6 +182,7 @@ class day1_solution{
         //program10();
         //program11();
         //program12();
-        program13();
+        //program13();
+        program14();
     }
 }
